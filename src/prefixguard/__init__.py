@@ -4,7 +4,7 @@ from ._lint import lint
 from .guard import PrefixGuard
 from .report import CachePrefixBroken, Cause, Finding, TurnReport
 
-__version__ = "0.1.0"
+__version__ = "0.2.1"
 
 __all__ = [
     "PrefixGuard",
