@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "prefixguard"
+version = "0.1.0"
+description = "Catch silent prompt-cache prefix invalidation in LLM agents before it hits your bill."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "Prakhar Gandhi" }]
+keywords = [
+  "llm", "prompt-caching", "kv-cache", "agents", "context-engineering",
+  "anthropic", "openai", "gemini", "deepseek", "kimi", "vllm", "cache-hit-rate", "observability", "prompt", "prompting"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+tokens = ["tiktoken>=0.5"]
+dev = ["pytest>=7", "tiktoken>=0.5"]
+
+[project.urls]
+Homepage = "https://github.com/pgstorm148/prefixguard"
+Issues = "https://github.com/pgstorm148/prefixguard/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/prefixguard"]
