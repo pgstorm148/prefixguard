@@ -1,5 +1,9 @@
 # prefixguard
 
+[![Tests](https://github.com/pgstorm148/prefixguard/actions/workflows/tests.yml/badge.svg)](https://github.com/pgstorm148/prefixguard/actions/workflows/tests.yml)
+[![PyPI](https://img.shields.io/pypi/v/prefixguard)](https://pypi.org/project/prefixguard/)
+[![License: MIT](https://img.shields.io/pypi/l/prefixguard)](https://github.com/pgstorm148/prefixguard/blob/main/LICENSE)
+
 **Your prompt cache is probably broken. You have no error to tell you.**
 
 ```bash
